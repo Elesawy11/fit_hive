@@ -5,10 +5,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 abstract class FontStyles {
   static TextStyle font36SemiBold() =>
       TextStyle(fontSize: 36.sp, fontWeight: FontWeightHelper.semiBold);
-      
-      static TextStyle font18Regular() =>
+
+  static TextStyle font18Regular() =>
       TextStyle(fontSize: 18.sp, fontWeight: FontWeightHelper.regular);
 
-      static TextStyle font16Bold() =>
+  static TextStyle font16Bold() =>
       TextStyle(fontSize: 16.sp, fontWeight: FontWeightHelper.bold);
 }
