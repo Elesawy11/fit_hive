@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/helpers/spacers.dart';
-import '../../../../core/theming/color_helper.dart';
-import '../../../../core/theming/font_styles.dart';
+import '../../../../../core/helpers/spacers.dart';
+import '../../../../../core/theming/color_helper.dart';
+import '../../../../../core/theming/font_styles.dart';
 import '../constatnts.dart';
 
 class OnbaordingListView extends StatelessWidget {
   const OnbaordingListView({
-    super.key,
+    super.key, required this.controller,
   });
-
+final ScrollController controller ;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.75,
       child: ListView.builder(
+        controller: controller,
         itemExtent: MediaQuery.of(context).size.width,
         padding: EdgeInsets.zero,
         physics: const NeverScrollableScrollPhysics(),

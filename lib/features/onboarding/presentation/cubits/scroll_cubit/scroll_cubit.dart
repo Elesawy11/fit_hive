@@ -18,7 +18,7 @@ class ScrollCubit extends Cubit<ScrollState> {
       progress = progress + 0.25;
       index = index + MediaQuery.of(context).size.width;
       controller.jumpTo(index);
-      emit(ScrollIncrease());
+      emit(ScrollIncrease(progress: progress));
     }
   }
 }

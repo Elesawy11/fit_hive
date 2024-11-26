@@ -1,4 +1,4 @@
-import 'package:fit_hive/features/onboarding/presentation/onboarding.dart';
+import 'package:fit_hive/features/onboarding/presentation/views/onboarding.dart';
 import 'package:fit_hive/features/welcome/presentation/welcome_view.dart';
 import 'package:get/get.dart';
 

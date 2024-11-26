@@ -1,33 +1,17 @@
+import 'package:fit_hive/features/onboarding/presentation/cubits/scroll_cubit/scroll_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import '../../../../core/theming/color_helper.dart';
-import '../../../../core/utils/routes.dart';
+import '../../../../../core/theming/color_helper.dart';
 import 'circule_button.dart';
 
-class OnboardingCirculerButton extends StatefulWidget {
-  const OnboardingCirculerButton({
-    super.key,
-  });
-
-  @override
-  State<OnboardingCirculerButton> createState() =>
-      _OnboardingCirculerButtonState();
-}
-
-class _OnboardingCirculerButtonState extends State<OnboardingCirculerButton> {
-  double progress = 0.25;
+class OnboardingCirculerButton extends StatelessWidget {
+  const OnboardingCirculerButton({super.key, required this.progress});
+  final double progress;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        if (progress == 1) {
-          Get.toNamed(Routes.welcomeView);
-        }
-        progress = progress + 0.25;
-
-        setState(() {});
-      },
+      onTap: () => context.read<ScrollCubit>().scroll(),
       child: SizedBox(
         child: Stack(
           alignment: Alignment.center,
