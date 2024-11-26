@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/theming/color_helper.dart';
+import '../../../../core/helpers/basic_gradient.dart';
 import '../../../../core/theming/font_styles.dart';
 
 class CustomTextbutton extends StatelessWidget {
   const CustomTextbutton({
-    super.key, this.onPressed,
+    super.key,
+    this.onPressed,
   });
-final void Function()? onPressed;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return TextButton(
@@ -17,10 +17,7 @@ final void Function()? onPressed;
         height: 60.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(32),
-          gradient: LinearGradient(colors: [
-            ColorHelper.color9DC(),
-            ColorHelper.color92A(),
-          ]),
+          gradient: basicGradient(),
         ),
         child: Center(
           child: Text(
@@ -33,4 +30,6 @@ final void Function()? onPressed;
       ),
     );
   }
+
+  
 }
