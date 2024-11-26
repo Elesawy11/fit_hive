@@ -5,7 +5,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'core/helpers/change_system_ui_mode.dart';
-import 'features/welcome/presentation/welcome_view.dart';
 
 void main(List<String> args) {
   Bloc.observer = SimpleBlocObserver();
@@ -30,7 +29,6 @@ class FitHive extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
-        home: const WelcomeView(),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:fit_hive/features/onboarding/presentation/views/onboarding.dart';
-import 'package:fit_hive/features/welcome/presentation/welcome_view.dart';
+import 'package:fit_hive/features/welcome/presentation/views/welcome_view.dart';
 import 'package:get/get.dart';
 
 List<GetPage<dynamic>> getPageList = [

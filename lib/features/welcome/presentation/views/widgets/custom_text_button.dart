@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../core/helpers/basic_gradient.dart';
-import '../../../../core/theming/font_styles.dart';
+import '../../../../../core/helpers/basic_gradient.dart';
+import '../../../../../core/theming/font_styles.dart';
 
 class CustomTextbutton extends StatelessWidget {
   const CustomTextbutton({

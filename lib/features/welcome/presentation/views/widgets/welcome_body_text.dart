@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/theming/color_helper.dart';
-import '../../../../core/theming/font_styles.dart';
+import '../../../../../core/theming/color_helper.dart';
+import '../../../../../core/theming/font_styles.dart';
 
 class WelcomeBodyText extends StatelessWidget {
   const WelcomeBodyText({
