@@ -38,7 +38,7 @@ class RegisterViewBody extends StatelessWidget {
                 verticalSpace(40),
                 CustomTextbutton(
                   text: 'Register',
-                  onPressed: () {},
+                  onPressed: () => Get.offAndToNamed(Routes.goalsView),
                 ),
                 verticalSpace(24),
                 const RowOfDividersAndText(),
