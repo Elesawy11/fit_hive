@@ -18,7 +18,7 @@ class WelcomeBodyText extends StatelessWidget {
                 TextSpan(
                   text: 'Flutter',
                   style: FontStyles.font36SemiBold().copyWith(
-                    color: ColorHelper.color1D1(),
+                    color: ColorHelper.mainColor(),
                   ),
                 ),
                 TextSpan(
@@ -33,7 +33,7 @@ class WelcomeBodyText extends StatelessWidget {
           Text(
             'Everybody can train',
             style: FontStyles.font18Regular().copyWith(
-              color: ColorHelper.color7B6(),
+              color: ColorHelper.secondaryColor(),
             ),
           )
         ],
