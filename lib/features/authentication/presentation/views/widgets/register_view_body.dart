@@ -18,39 +18,44 @@ class RegisterViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.w),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const Spacer(),
-            Text(
-              'Hey there,',
-              style: FontStyles.font16Regular()
-                  .copyWith(color: ColorHelper.secondaryColor()),
+    return SingleChildScrollView(
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        child: Center(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 24.w),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const Spacer(),
+                Text(
+                  'Hey there,',
+                  style: FontStyles.font16Regular()
+                      .copyWith(color: ColorHelper.secondaryColor()),
+                ),
+                Text(
+                  'Create an account',
+                  style: FontStyles.font20Bold()
+                      .copyWith(color: ColorHelper.mainColor()),
+                ),
+                verticalSpace(40),
+                const ColumnOfTextFormField(),
+                const RowOfIconButtonAndText(),
+                verticalSpace(40),
+                CustomTextbutton(
+                  text: 'Register',
+                  onPressed: () {},
+                ),
+                verticalSpace(24),
+                const RowOfDividersAndText(),
+                verticalSpace(24),
+                const SocialMediaAuthWidget(),
+                verticalSpace(24),
+                const AlreadyHaveAccountWidget(),
+                const Spacer(),
+              ],
             ),
-            Text(
-              'Create an account',
-              style: FontStyles.font20Bold()
-                  .copyWith(color: ColorHelper.mainColor()),
-            ),
-            verticalSpace(40),
-            const ColumnOfTextFormField(),
-            const RowOfIconButtonAndText(),
-            verticalSpace(40),
-            CustomTextbutton(
-              text: 'Register',
-              onPressed: () {},
-            ),
-            verticalSpace(24),
-            const RowOfDividersAndText(),
-            verticalSpace(24),
-            const SocialMediaAuthWidget(),
-            verticalSpace(24),
-            const AlreadyHaveAccountWidget(),
-            const Spacer(),
-          ],
+          ),
         ),
       ),
     );
