@@ -7,6 +7,7 @@ import '../../../../core/theming/font_styles.dart';
 import 'widgets/column_of_text_form_field.dart';
 import 'widgets/row_of_dividers_and_text.dart';
 import 'widgets/row_of_icon_button_and_text.dart';
+import 'widgets/social_media_auth_widget.dart';
 
 class RegisterView extends StatelessWidget {
   const RegisterView({super.key});
@@ -41,6 +42,8 @@ class RegisterView extends StatelessWidget {
               ),
               verticalSpace(24),
               const RowOfDividersAndText(),
+              verticalSpace(24),
+              const SocialMediaAuthWidget(),
               const Spacer(),
             ],
           ),

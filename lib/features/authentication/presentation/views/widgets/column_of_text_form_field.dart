@@ -59,7 +59,7 @@ class _CustomObsecureTextFieldState extends State<CustomObsecureTextField> {
           isObscure = !isObscure;
           setState(() {});
         },
-        icon: isObscure == true
+        icon: isObscure == false
             ? const Icon(
                 Icons.visibility_outlined,
               )
