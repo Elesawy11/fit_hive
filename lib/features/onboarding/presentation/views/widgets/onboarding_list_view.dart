@@ -8,9 +8,10 @@ import '../constatnts.dart';
 
 class OnbaordingListView extends StatelessWidget {
   const OnbaordingListView({
-    super.key, required this.controller,
+    super.key,
+    required this.controller,
   });
-final ScrollController controller ;
+  final ScrollController controller;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -61,13 +62,13 @@ class OnboardingListViewElement extends StatelessWidget {
               Text(
                 title,
                 style: FontStyles.font24Bold().copyWith(
-                  color: ColorHelper.color1D1(),
+                  color: ColorHelper.mainColor(),
                 ),
               ),
               Text(
                 subTitle,
                 style: FontStyles.font14Regular().copyWith(
-                  color: ColorHelper.color7B6(),
+                  color: ColorHelper.secondaryColor(),
                 ),
               ),
             ],
