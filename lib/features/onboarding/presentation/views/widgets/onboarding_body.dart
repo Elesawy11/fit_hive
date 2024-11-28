@@ -17,7 +17,7 @@ class OnboardingBody extends StatelessWidget {
     return BlocConsumer<ScrollCubit, ScrollState>(
       listener: (context, state) {
         if (state is ScrollFinish) {
-          Get.toNamed(Routes.welcomeView);
+          Get.toNamed(Routes.registerView);
         }
       },
       builder: (context, state) {
