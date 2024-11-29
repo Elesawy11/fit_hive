@@ -20,6 +20,8 @@ class Assets {
 
   static const String assetsImagesOnboarding4 = "assets/images/Onboarding4.png";
 
+  static const String assetsImagesRegistrationSuccess = "assets/images/registrationSuccess.png";
+
   static const String assetsImagesSplash = "assets/images/Splash.png";
 }
 

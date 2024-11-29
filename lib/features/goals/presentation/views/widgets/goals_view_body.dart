@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../../../../core/helpers/spacers.dart';
 import '../../../../../core/widgets/custom_text_button.dart';
-import 'goals_upper_text.dart';
+import '../../../../../core/widgets/custom_bold_and_normal_text.dart';
 import 'stacked_card.dart';
 
 class GoalsViewBody extends StatelessWidget {
@@ -25,7 +25,7 @@ class GoalsViewBody extends StatelessWidget {
           ),
           Positioned(
             top: 40.h,
-            child: const GoalsUpperText(
+            child: const CustomBoldAndNormalText(
               firstText: 'What\'s your goal?',
               secondText: 'It will help us to choose a best \nprogram for you',
             ),
