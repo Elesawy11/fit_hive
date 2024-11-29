@@ -1,7 +1,7 @@
 import 'package:fit_hive/features/goals/presentation/views/widgets/goals_upper_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'widgets/custom_card_widget.dart';
+
+import 'widgets/stacked_card.dart';
 
 class GoalsView extends StatelessWidget {
   const GoalsView({super.key});
@@ -10,30 +10,34 @@ class GoalsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Padding(
-          padding: EdgeInsets.all(24.r),
-          child: const Column(
-            children: [
-              Spacer(
-                flex: 1,
-              ),
-              GoalsUpperText(
-                firstText: 'What\'s your goal?',
-                secondText:
-                    'It will help us to choose a best \nprogram for you',
-              ),
-              Spacer(
-                flex: 2,
-              ),
-              CustomCardWidget(index: 1),
-              Spacer(
-                flex: 2,
-              ),
-              Spacer(
-                flex: 1,
-              ),
-            ],
-          ),
+        child:
+            // StackedCards()
+            Stack(
+          clipBehavior: Clip.none,
+          alignment: AlignmentDirectional.center,
+          children: [
+            const Spacer(
+              flex: 1,
+            ),
+            const GoalsUpperText(
+              firstText: 'What\'s your goal?',
+              secondText: 'It will help us to choose a best \nprogram for you',
+            ),
+            const Spacer(
+              flex: 2,
+            ),
+            // CustomCardWidget(),
+            StackedCards(
+              screenHeight: MediaQuery.of(context).size.height,
+              screenWidth: MediaQuery.of(context).size.width,
+            ),
+            const Spacer(
+              flex: 2,
+            ),
+            const Spacer(
+              flex: 1,
+            ),
+          ],
         ),
       ),
     );

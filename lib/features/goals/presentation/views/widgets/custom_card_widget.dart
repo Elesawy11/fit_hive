@@ -6,9 +6,7 @@ import '../../../../../core/theming/color_helper.dart';
 import '../../../../../core/theming/font_styles.dart';
 
 class CustomCardWidget extends StatelessWidget {
-  final int index;
-
-  const CustomCardWidget({super.key, required this.index});
+  const CustomCardWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +16,7 @@ class CustomCardWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       child: Container(
-        // width: 250,
+        width: MediaQuery.of(context).size.width * 0.7,
         // height: 150,
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
