@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/theming/color_helper.dart';
-import '../../../../../core/theming/font_styles.dart';
+import '../theming/color_helper.dart';
+import '../theming/font_styles.dart';
 
-class GoalsUpperText extends StatelessWidget {
-  const GoalsUpperText({
+class CustomBoldAndNormalText extends StatelessWidget {
+  const CustomBoldAndNormalText({
     super.key,
     required this.firstText,
     required this.secondText,
