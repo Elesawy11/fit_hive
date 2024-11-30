@@ -54,7 +54,7 @@ class LoginViewBody extends StatelessWidget {
                 verticalSpace(40),
                 CustomTextbutton(
                   text: 'Login',
-                  onPressed: () {},
+                  onPressed: () => Get.offAndToNamed(Routes.homeView),
                 ),
                 verticalSpace(24),
                 const RowOfDividersAndText(),
