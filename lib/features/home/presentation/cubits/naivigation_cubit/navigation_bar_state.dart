@@ -4,3 +4,4 @@ part of 'navigation_bar_cubit.dart';
 sealed class NavigationBarState {}
 
 final class NavigationBarInitial extends NavigationBarState {}
+final class ChangeIndex extends NavigationBarState {}

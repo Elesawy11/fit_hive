@@ -9,5 +9,6 @@ class NavigationBarCubit extends Cubit<NavigationBarState> {
 
   void navigateToIndex({required int index}) {
     currentIndex = index;
+    emit(ChangeIndex());
   }
 }
