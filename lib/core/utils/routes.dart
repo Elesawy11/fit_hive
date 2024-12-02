@@ -18,7 +18,7 @@ List<GetPage<dynamic>> getPageList = [
       name: Routes.registerSuccessView,
       page: () => const RegisterSuccessView()),
   GetPage(name: Routes.mainView, page: () => const MainView()),
-  GetPage(name: Routes.homeView, page: () => const HomeView()),
+  // GetPage(name: Routes.homeView, page: () => const HomeView()),
 ];
 
 abstract class Routes {
@@ -28,6 +28,6 @@ abstract class Routes {
   static const String loginView = '/loginView';
   static const String goalsView = '/goalsView';
   static const String registerSuccessView = '/registerSuccessView';
-  static const String homeView = '/homeView';
+  // static const String homeView = '/homeView';
   static const String mainView = '/mainView';
 }
