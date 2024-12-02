@@ -11,23 +11,21 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24.w),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const Spacer(
-                flex: 2,
-              ),
-              const CustomHomeViewBar(),
-              verticalSpace(24),
-              const CustomProgressWidget(),
-              const Spacer(
-                flex: 1,
-              ),
-            ],
-          ),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 24.w),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Spacer(
+              flex: 2,
+            ),
+            const CustomHomeViewBar(),
+            verticalSpace(24),
+            const CustomProgressWidget(),
+            const Spacer(
+              flex: 1,
+            ),
+          ],
         ),
       ),
     );

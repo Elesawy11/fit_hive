@@ -14,7 +14,9 @@ class OnboardingBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scrollCubit = Get.find<ScrollCubit>();
     return BlocConsumer<ScrollCubit, ScrollState>(
+      bloc: scrollCubit,
       listener: (context, state) {
         if (state is ScrollFinish) {
           Get.toNamed(Routes.registerView);
@@ -25,21 +27,20 @@ class OnboardingBody extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           child: Column(
             children: [
+              // Pass the controller directly
               OnbaordingListView(
-                controller: context.read<ScrollCubit>().controller,
+                controller: scrollCubit.controller,
               ),
               const Spacer(),
               Align(
                 alignment: Alignment.topRight,
                 child: Padding(
                   padding: EdgeInsets.only(right: 24.w, bottom: 32.h),
-
                   child: OnboardingCirculerButton(
                     progress: state is ScrollIncrease ? state.progress : 0.25,
                   ),
-                  // child:
                 ),
-              )
+              ),
             ],
           ),
         );
