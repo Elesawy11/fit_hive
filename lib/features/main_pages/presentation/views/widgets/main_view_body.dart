@@ -1,3 +1,4 @@
+import 'package:fit_hive/features/main_pages/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -13,17 +14,7 @@ class MainViewBody extends StatelessWidget {
     return BlocBuilder<NavigationBarCubit, int>(
       builder: (context, state) {
         return [
-          Scaffold(
-            floatingActionButton: FloatingActionButton(
-              onPressed: () {},
-              child: const Icon(Icons.add),
-            ),
-            body: const Center(
-                child: Text(
-              'Home',
-              style: TextStyle(fontSize: 36),
-            )),
-          ),
+          const HomeView(),
           const Center(
               child: Text(
             'Progress Tracker',

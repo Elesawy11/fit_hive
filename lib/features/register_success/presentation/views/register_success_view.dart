@@ -34,7 +34,7 @@ class RegisterSuccessView extends StatelessWidget {
             ),
             CustomTextbutton(
               text: 'Go To Home',
-              onPressed: () => Get.offAndToNamed(Routes.homeView),
+              onPressed: () => Get.offAndToNamed(Routes.mainView),
             ),
             const Spacer(
               flex: 1,

@@ -1,6 +1,7 @@
 import 'package:fit_hive/features/authentication/presentation/views/login_view.dart';
 import 'package:fit_hive/features/authentication/presentation/views/register_view.dart';
 import 'package:fit_hive/features/goals/presentation/views/goals_view.dart';
+import 'package:fit_hive/features/main_pages/presentation/views/home_view.dart';
 import 'package:fit_hive/features/main_pages/presentation/views/main_view.dart';
 import 'package:fit_hive/features/onboarding/presentation/views/onboarding.dart';
 import 'package:fit_hive/features/register_success/presentation/views/register_success_view.dart';
@@ -16,6 +17,7 @@ List<GetPage<dynamic>> getPageList = [
   GetPage(
       name: Routes.registerSuccessView,
       page: () => const RegisterSuccessView()),
+  GetPage(name: Routes.mainView, page: () => const MainView()),
   GetPage(name: Routes.homeView, page: () => const HomeView()),
 ];
 
@@ -27,4 +29,5 @@ abstract class Routes {
   static const String goalsView = '/goalsView';
   static const String registerSuccessView = '/registerSuccessView';
   static const String homeView = '/homeView';
+  static const String mainView = '/mainView';
 }
