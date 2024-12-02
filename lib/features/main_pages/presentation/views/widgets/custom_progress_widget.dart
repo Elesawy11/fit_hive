@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/helpers/spacers.dart';
 import '../../../../../core/theming/color_helper.dart';
 import '../../../../../core/theming/font_styles.dart';
+import 'custom_home_text_button.dart';
 import 'custom_progress_bar.dart';
 
 class CustomProgressWidget extends StatelessWidget {
@@ -41,23 +42,9 @@ class CustomProgressWidget extends StatelessWidget {
                 ),
               ),
               verticalSpace(12),
-              TextButton(
-                onPressed: () {},
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: ColorHelper.color844(),
-                      borderRadius: BorderRadius.circular(100.r)),
-                  width: 130.w,
-                  height: 40.h,
-                  child: Center(
-                    child: Text(
-                      'View more',
-                      style: FontStyles.font14Medium().copyWith(
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
+              CustomHomeTextButton(
+                buttonColor: ColorHelper.color844(),
+                text: 'View more',
               ),
             ],
           ),

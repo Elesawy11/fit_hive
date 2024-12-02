@@ -30,6 +30,9 @@ abstract class FontStyles {
   static TextStyle font16Regular() =>
       TextStyle(fontSize: 16.sp, fontWeight: FontWeightHelper.regular);
 
+  static TextStyle font16Medium() =>
+      TextStyle(fontSize: 16.sp, fontWeight: FontWeightHelper.medium);
+
   static TextStyle font20Bold() =>
       TextStyle(fontSize: 20.sp, fontWeight: FontWeightHelper.bold);
 
