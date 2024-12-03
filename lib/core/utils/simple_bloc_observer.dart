@@ -9,12 +9,12 @@ class SimpleBlocObserver implements BlocObserver {
 
   @override
   void onClose(BlocBase bloc) {
-    log(bloc.toString());
+    log('close =>>${bloc.toString()}');
   }
 
   @override
   void onCreate(BlocBase bloc) {
-    log(bloc.toString());
+    log('create =>>${bloc.toString()}');
   }
 
   @override

@@ -2,6 +2,8 @@
 class Assets {
   Assets._();
   
+  static const String assetsIconsExpandCircleRight = "assets/icons/expand_circle_right.svg";
+
   static const String assetsImagesFacebookIcon = "assets/images/facebookIcon.png";
 
   static const String assetsImagesGoal1 = "assets/images/Goal1.png";
@@ -23,5 +25,11 @@ class Assets {
   static const String assetsImagesRegistrationSuccess = "assets/images/registrationSuccess.png";
 
   static const String assetsImagesSplash = "assets/images/Splash.png";
+
+  static const String assetsImagesWorkoutPic1 = "assets/images/Workout-Pic1.png";
+
+  static const String assetsImagesWorkoutPic2 = "assets/images/Workout-Pic2.png";
+
+  static const String assetsImagesWorkoutPic3 = "assets/images/Workout-Pic3.png";
 }
 
