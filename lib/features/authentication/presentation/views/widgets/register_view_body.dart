@@ -1,11 +1,11 @@
+import 'package:fit_hive/core/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:get/get.dart';
 import '../../../../../core/helpers/spacers.dart';
-import '../../../../../core/theming/color_helper.dart';
-import '../../../../../core/theming/font_styles.dart';
 import '../../../../../core/widgets/custom_text_button.dart';
 import 'already_have_account_widget.dart';
+import 'auth_upper_text.dart';
 import 'column_of_text_form_field.dart';
 import 'row_of_dividers_and_text.dart';
 import 'row_of_icon_button_and_text.dart';
@@ -28,15 +28,9 @@ class RegisterViewBody extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Spacer(),
-                Text(
-                  'Hey there,',
-                  style: FontStyles.font16Regular()
-                      .copyWith(color: ColorHelper.secondaryColor()),
-                ),
-                Text(
-                  'Create an account',
-                  style: FontStyles.font20Bold()
-                      .copyWith(color: ColorHelper.mainColor()),
+                const AuthUpperText(
+                  firstText: 'Hey there,',
+                  secondText: 'Create an account',
                 ),
                 verticalSpace(40),
                 const ColumnOfTextFormField(),
@@ -44,14 +38,18 @@ class RegisterViewBody extends StatelessWidget {
                 verticalSpace(40),
                 CustomTextbutton(
                   text: 'Register',
-                  onPressed: () {},
+                  onPressed: () => Get.offAndToNamed(Routes.goalsView),
                 ),
                 verticalSpace(24),
                 const RowOfDividersAndText(),
                 verticalSpace(24),
                 const SocialMediaAuthWidget(),
                 verticalSpace(24),
-                const AlreadyHaveAccountWidget(),
+                AlreadyHaveAccountWidget(
+                  text: 'Already have an account?',
+                  operat: ' Login',
+                  onTap: () => Get.toNamed(Routes.loginView),
+                ),
                 const Spacer(),
               ],
             ),

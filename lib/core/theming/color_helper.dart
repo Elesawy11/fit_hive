@@ -11,5 +11,10 @@ abstract class ColorHelper {
   static Color colorECE() => const Color(0xffECEEEE);
   static Color colorF7F() => const Color(0xffF7F8F8);
   static Color color645() => const Color(0xff6450A5);
+  static Color colorC58() => const Color(0xffC58BF2);
+  static Color colorEEA() => const Color(0xffEEA4CE);
+  static Color color7B6() => const Color(0xff7B6F72);
+  static Color colorError() => const Color(0xffE21C3D);
+  static Color color339D() => const Color(0xff339DCEFF);
+  static Color color3392() => const Color(0xff3392A3FD);
 }
-
