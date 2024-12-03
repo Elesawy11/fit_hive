@@ -1,7 +1,4 @@
-import 'package:fit_hive/core/assets/assets.dart';
 import 'package:fit_hive/core/helpers/spacers.dart';
-import 'package:fit_hive/core/theming/color_helper.dart';
-import 'package:fit_hive/core/theming/font_styles.dart';
 import 'package:fit_hive/features/main_pages/presentation/views/widgets/custom_container_of_text_and_button.dart.dart';
 import 'package:fit_hive/features/main_pages/presentation/views/widgets/custom_row_of_two_text.dart.dart';
 import 'package:flutter/material.dart';
