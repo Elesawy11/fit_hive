@@ -22,9 +22,27 @@ class Assets {
 
   static const String assetsImagesOnboarding4 = "assets/images/Onboarding4.png";
 
+  static const String assetsImagesRectangle1 = "assets/images/rectangle1.webp";
+
+  static const String assetsImagesRectangle2 = "assets/images/rectangle2.webp";
+
+  static const String assetsImagesRectangle3 = "assets/images/rectangle3.webp";
+
+  static const String assetsImagesRectangle4 = "assets/images/rectangle4.webp";
+
+  static const String assetsImagesRectangle5 = "assets/images/rectangle5.webp";
+
+  static const String assetsImagesRectangle6 = "assets/images/rectangle6.webp";
+
+  static const String assetsImagesRectangle7 = "assets/images/rectangle7.webp";
+
   static const String assetsImagesRegistrationSuccess = "assets/images/registrationSuccess.png";
 
+  static const String assetsImagesReminder = "assets/images/reminder.png";
+
   static const String assetsImagesSplash = "assets/images/Splash.png";
+
+  static const String assetsImagesTrack = "assets/images/track.png";
 
   static const String assetsImagesWorkoutPic1 = "assets/images/Workout-Pic1.png";
 

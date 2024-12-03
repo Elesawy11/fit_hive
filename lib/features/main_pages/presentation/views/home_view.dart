@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'widgets/custom_home_view_bar.dart';
 import 'widgets/custom_latest_list_view.dart';
-import 'widgets/custom_latest_work_widget.dart';
+import 'widgets/custom_row_of_two_text.dart.dart';
 import 'widgets/custom_progress_widget.dart';
-import 'widgets/custom_today_target_widget.dart';
+import 'widgets/custom_container_of_text_and_button.dart.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -23,9 +23,15 @@ class HomeView extends StatelessWidget {
             verticalSpace(24),
             const CustomProgressWidget(),
             verticalSpace(24),
-            const CustomTodayTargetWidget(),
+            const CustomContainerOfTextAndButton(
+              text: 'Today\'s target',
+              buttonText: 'Check',
+            ),
             verticalSpace(30),
-            const CustomLatestWorkWidget(),
+            const CustomRowOfTwoText(
+              boldText: 'Latest workout',
+              normalText: 'see more',
+            ),
             verticalSpace(24),
             const Expanded(
               child: CustomLatestWorkListView(),

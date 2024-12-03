@@ -1,4 +1,5 @@
 import 'package:fit_hive/features/main_pages/presentation/views/home_view.dart';
+import 'package:fit_hive/features/main_pages/presentation/views/progress_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,11 +16,7 @@ class MainViewBody extends StatelessWidget {
       builder: (context, state) {
         return [
           const HomeView(),
-          const Center(
-              child: Text(
-            'Progress Tracker',
-            style: TextStyle(fontSize: 36),
-          )),
+          const ProgressView(),
           const Center(
               child: Text(
             'Profile',

@@ -5,16 +5,18 @@ import '../../../../../core/theming/color_helper.dart';
 import '../../../../../core/theming/font_styles.dart';
 import 'custom_home_text_button.dart';
 
-class CustomTodayTargetWidget extends StatelessWidget {
-  const CustomTodayTargetWidget({
+class CustomContainerOfTextAndButton extends StatelessWidget {
+  const CustomContainerOfTextAndButton({
     super.key,
+    required this.text,
+    required this.buttonText,
   });
-
+  final String text, buttonText;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: ColorHelper.color339(),
+        color: ColorHelper.color339D(),
         borderRadius: BorderRadius.circular(
           30.r,
         ),
@@ -25,7 +27,7 @@ class CustomTodayTargetWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Today\'s target',
+              text,
               style: FontStyles.font16Medium().copyWith(
                 color: ColorHelper.mainColor(),
               ),
@@ -33,7 +35,7 @@ class CustomTodayTargetWidget extends StatelessWidget {
             CustomHomeTextButton(
               width: 90.w,
               height: 40.h,
-              text: 'Check',
+              text: buttonText,
               buttonColor: ColorHelper.color92A(),
             )
           ],
