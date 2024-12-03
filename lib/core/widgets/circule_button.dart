@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../core/helpers/basic_gradient.dart';
+import '../helpers/basic_gradient.dart';
 
 class CirculerButton extends StatelessWidget {
   const CirculerButton({
