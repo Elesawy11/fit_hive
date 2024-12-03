@@ -2,6 +2,8 @@ import 'package:fit_hive/core/helpers/spacers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'widgets/custom_home_view_bar.dart';
+import 'widgets/custom_latest_work_list_item.dart';
+import 'widgets/custom_latest_work_widget.dart';
 import 'widgets/custom_progress_widget.dart';
 import 'widgets/custom_today_target_widget.dart';
 
@@ -16,19 +18,21 @@ class HomeView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Spacer(
-              flex: 2,
-            ),
+            verticalSpace(40),
             const CustomHomeViewBar(),
             verticalSpace(24),
             const CustomProgressWidget(),
+            verticalSpace(24),
             const CustomTodayTargetWidget(),
-            const Spacer(
-              flex: 1,
-            ),
+            verticalSpace(30),
+            const CustomLatestWorkWidget(),
+            verticalSpace(24),
+            const CustomLatestWorkListItem(),
+            const Spacer(),
           ],
         ),
       ),
     );
   }
 }
+
