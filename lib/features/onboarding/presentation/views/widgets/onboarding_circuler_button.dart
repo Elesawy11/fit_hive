@@ -16,7 +16,12 @@ class OnboardingCirculerButton extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            const CirculerButton(),
+            const CirculerButton(
+              child: Icon(
+                Icons.chevron_right,
+                color: Colors.white,
+              ),
+            ),
             SizedBox(
               height: 68.r,
               width: 68.r,

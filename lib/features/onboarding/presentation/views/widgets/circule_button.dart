@@ -4,9 +4,9 @@ import '../../../../../core/helpers/basic_gradient.dart';
 
 class CirculerButton extends StatelessWidget {
   const CirculerButton({
-    super.key,
+    super.key, required this.child,
   });
-
+final Widget child;
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
@@ -21,10 +21,7 @@ class CirculerButton extends StatelessWidget {
             40.r,
           ),
         ),
-        child: const Icon(
-          Icons.chevron_right,
-          color: Colors.white,
-        ),
+        child: child
       ),
     );
   }
