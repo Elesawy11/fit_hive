@@ -5,7 +5,7 @@ import 'widgets/custom_home_view_bar.dart';
 import 'widgets/custom_latest_list_view.dart';
 import 'widgets/custom_latest_work_widget.dart';
 import 'widgets/custom_progress_widget.dart';
-import 'widgets/custom_today_target_widget.dart';
+import 'widgets/custom_container_of_text_and_button.dart.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -23,7 +23,10 @@ class HomeView extends StatelessWidget {
             verticalSpace(24),
             const CustomProgressWidget(),
             verticalSpace(24),
-            const CustomTodayTargetWidget(),
+            const CustomContainerOfTextAndButton(
+              text: 'Today\'s target',
+              buttonText: 'Check',
+            ),
             verticalSpace(30),
             const CustomLatestWorkWidget(),
             verticalSpace(24),

@@ -1,4 +1,5 @@
 import 'package:fit_hive/core/helpers/spacers.dart';
+import 'package:fit_hive/features/main_pages/presentation/views/widgets/custom_container_of_text_and_button.dart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'widgets/custom_progress_floating_action_button.dart';
@@ -18,8 +19,13 @@ class ProgressView extends StatelessWidget {
           children: [
             verticalSpace(40),
             const CustomReminderWidget(),
-            verticalSpace(24),
-            const CustomTrackerWidget()
+            verticalSpace(32),
+            const CustomTrackerWidget(),
+            verticalSpace(32),
+            const CustomContainerOfTextAndButton(
+              text: 'Compare my phone',
+              buttonText: 'Compare',
+            )
           ],
         ),
       ),
