@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'widgets/custom_progress_floating_action_button.dart';
 import 'widgets/custom_reminder_widget.dart';
+import 'widgets/custom_tracker_widget.dart';
 
 class ProgressView extends StatelessWidget {
   const ProgressView({super.key});
@@ -10,16 +11,18 @@ class ProgressView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        floatingActionButton: const CustomProgressFloatingActionButton(),
-        body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24.w),
-          child: Column(
-            children: [
-              verticalSpace(40),
-              const CustomReminderWidget(),
-            ],
-          ),
-        ));
+      floatingActionButton: const CustomProgressFloatingActionButton(),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 24.w),
+        child: Column(
+          children: [
+            verticalSpace(40),
+            const CustomReminderWidget(),
+            verticalSpace(24),
+            const CustomTrackerWidget()
+          ],
+        ),
+      ),
+    );
   }
 }
-

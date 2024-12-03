@@ -14,7 +14,7 @@ class CustomTodayTargetWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: ColorHelper.color339(),
+        color: ColorHelper.color339D(),
         borderRadius: BorderRadius.circular(
           30.r,
         ),

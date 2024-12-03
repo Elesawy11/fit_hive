@@ -36,6 +36,8 @@ class Assets {
 
   static const String assetsImagesSplash = "assets/images/Splash.png";
 
+  static const String assetsImagesTrack = "assets/images/track.png";
+
   static const String assetsImagesWorkoutPic1 = "assets/images/Workout-Pic1.png";
 
   static const String assetsImagesWorkoutPic2 = "assets/images/Workout-Pic2.png";
