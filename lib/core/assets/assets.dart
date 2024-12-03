@@ -22,7 +22,17 @@ class Assets {
 
   static const String assetsImagesOnboarding4 = "assets/images/Onboarding4.png";
 
+  static const String assetsImagesRectangle1 = "assets/images/rectangle1.webp";
+
+  static const String assetsImagesRectangle2 = "assets/images/rectangle2.webp";
+
+  static const String assetsImagesRectangle3 = "assets/images/rectangle3.webp";
+
+  static const String assetsImagesRectangle4 = "assets/images/rectangle4.webp";
+
   static const String assetsImagesRegistrationSuccess = "assets/images/registrationSuccess.png";
+
+  static const String assetsImagesReminder = "assets/images/reminder.png";
 
   static const String assetsImagesSplash = "assets/images/Splash.png";
 
