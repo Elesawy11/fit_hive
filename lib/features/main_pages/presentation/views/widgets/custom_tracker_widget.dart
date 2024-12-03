@@ -1,4 +1,5 @@
 import 'package:fit_hive/core/assets/assets.dart';
+import 'package:fit_hive/core/helpers/spacers.dart';
 import 'package:fit_hive/core/theming/color_helper.dart';
 import 'package:fit_hive/core/theming/font_styles.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,7 @@ class CustomTrackerWidget extends StatelessWidget {
                     style: FontStyles.font12Medium(),
                   ),
                 ),
+                verticalSpace(8),
                 CustomHomeTextButton(
                   text: 'Learn more',
                   buttonColor: ColorHelper.color92A(),

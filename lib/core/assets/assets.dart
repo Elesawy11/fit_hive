@@ -30,6 +30,12 @@ class Assets {
 
   static const String assetsImagesRectangle4 = "assets/images/rectangle4.webp";
 
+  static const String assetsImagesRectangle5 = "assets/images/rectangle5.webp";
+
+  static const String assetsImagesRectangle6 = "assets/images/rectangle6.webp";
+
+  static const String assetsImagesRectangle7 = "assets/images/rectangle7.webp";
+
   static const String assetsImagesRegistrationSuccess = "assets/images/registrationSuccess.png";
 
   static const String assetsImagesReminder = "assets/images/reminder.png";
