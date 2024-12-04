@@ -18,6 +18,7 @@
   - get to Navigation and dependency injection and some animation during navigation
 ## App UI
   - First Splash Screen
+    ![Screenshot_1733278659](https://github.com/user-attachments/assets/dd4ec6c6-7a3c-45d5-bc9d-82c9e8729a39)
 
   - Welcome Screen
 ![Screenshot_1733278160](https://github.com/user-attachments/assets/05c49e2b-7766-4986-98e5-d1d0ce8b375e)
