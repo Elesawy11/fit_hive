@@ -7,10 +7,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CustomDetaileWidget extends StatelessWidget {
   const CustomDetaileWidget({
     super.key,
-    required this.icon,
+    required this.leftIcon,
     required this.text,
+    required this.rightIcon,
   });
-  final IconData icon;
+  final IconData leftIcon;
+  final IconData rightIcon;
   final String text;
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class CustomDetaileWidget extends StatelessWidget {
       child: Row(
         children: [
           Icon(
-            icon,
+            leftIcon,
             size: 20.r,
             color: ColorHelper.color9DC(),
           ),
@@ -32,7 +34,7 @@ class CustomDetaileWidget extends StatelessWidget {
           ),
           const Spacer(),
           Icon(
-            Icons.chevron_right_outlined,
+            rightIcon,
             size: 24.r,
             color: ColorHelper.color7B6(),
           ),
@@ -46,17 +48,52 @@ const List<List<dynamic>> accountList = [
   [
     Icons.person_pin_circle_outlined,
     'Personal Data',
+    Icons.chevron_right_outlined,
   ],
   [
     Icons.receipt_long_outlined,
     'Achievements',
+    Icons.chevron_right_outlined,
   ],
   [
     Icons.pie_chart_outline,
     'Activity History',
+    Icons.chevron_right_outlined,
   ],
   [
     Icons.insert_chart_outlined,
     'Workout Progress',
+    Icons.chevron_right_outlined,
+  ],
+];
+
+const List<List<dynamic>> notificationsList = [
+  [
+    Icons.notifications_none_outlined,
+    'Pop-up Notifications',
+    Icons.toggle_on_outlined,
+  ],
+  [
+    Icons.mark_email_unread_outlined,
+    'Pop-up Notifications',
+    Icons.toggle_on_outlined,
+  ],
+];
+
+const List<List<dynamic>> otherList = [
+  [
+    Icons.contact_support_outlined,
+    'Contact Us',
+    Icons.chevron_right_outlined,
+  ],
+  [
+    Icons.privacy_tip_outlined,
+    'Privacy Policy',
+    Icons.chevron_right_outlined,
+  ],
+  [
+    Icons.settings_outlined,
+    'Settings',
+    Icons.chevron_right_outlined,
   ],
 ];
