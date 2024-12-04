@@ -6,6 +6,7 @@ import 'package:fit_hive/features/main_pages/presentation/views/widgets/custom_h
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'widgets/custom_details_list_view.dart';
 import 'widgets/custom_profile_upper_widget.dart';
 
 class ProfileView extends StatelessWidget {
@@ -18,10 +19,11 @@ class ProfileView extends StatelessWidget {
       child: Column(
         children: [
           verticalSpace(40),
-        const  CustomProfileUpperWidget()
+          const CustomProfileUpperWidget(),
+          verticalSpace(28),
+          const CustomDetailsListView(),
         ],
       ),
     );
   }
 }
-
